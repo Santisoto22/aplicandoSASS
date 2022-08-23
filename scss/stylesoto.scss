@@ -15,7 +15,7 @@ img{
 ul{
     display: flex;
     list-style-type: none;
-    background-color: white;
+    background-color: rgb(121, 13, 13);
 }
 
 li{
@@ -29,9 +29,7 @@ header{
     display: flex;
 }
 
-header h1{
-    font-family: 'Bebas Neue', cursive;
-}
+
 
 footer{
     height: 100px;
@@ -65,18 +63,20 @@ button:hover{
 
 @media only screen and (min-width: 600px){
     
-
-    header{
-        height: 300px;
-        background-color: white;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .titulo_header{
+    .msj{
         font-size: 61px;
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+        background-color: black;
+        padding: 1px;
     }
+
+    .msj__titulo{
+        @extend .msj;
+        background-color: white;
+        color: rgb(0, 0, 0);
+    }
+
 
     .logo_header{
         height: 40%;
@@ -147,13 +147,25 @@ button:hover{
         filter: grayscale(0%);
     }
 
-    .comentario{
-        color: white;
-        font-family: 'Inconsolata', monospace;
-        font-size: 45px;
-        text-align: center;
-  
+    .videoyt{
+        width: 1100px;
+        height: 600px;
     }
+
+    @mixin estilo_alerta( $color_letra, $tamanio_letra, $color_fondo){
+        font-size: $tamanio_letra;
+        text-align: center;
+        background-color: $color_fondo;
+        color: $color_letra;
+        font-family: 'MuseoModerno', cursive;
+    }
+
+  
+    .mensaje_index{
+        @include estilo_alerta(white, 28px, black);
+    }
+
+    
 
     .contenido{
         height: 800px;
@@ -165,17 +177,8 @@ button:hover{
         align-content: space-around;
     }
 
-    .videoyt{
-        width: 1100px;
-        height: 600px;
-    }
+ 
 
-    .romafonic{
-        color: white;
-        text-align: center;
-        font-size: 15px;
-        font-family: 'MuseoModerno', cursive;
-    }
 
 
 

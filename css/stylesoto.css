@@ -132,7 +132,8 @@ button:hover {
     display: grid;
     grid-template-columns: 40% 40%;
     grid-template-rows: 500px 500px;
-    grid-template-areas: "album_uno album_dos" "album_tres album_cuatro";
+    grid-template-areas: "album_uno album_dos"
+ "album_tres album_cuatro";
     height: 1200px;
     align-content: space-around;
     justify-content: center;
@@ -333,7 +334,12 @@ button:hover {
     height: 2500px;
     grid-template-columns: 90%;
     grid-template-rows: 400px 400px 400px 400px 400px 400px;
-    grid-template-areas: "foto1"  "foto2" "foto3" "foto4" "foto5" "foto6";
+    grid-template-areas: "foto1" 
+ "foto2"
+ "foto3"
+ "foto4"
+ "foto5"
+ "foto6";
     align-content: space-around;
     justify-content: center; }
   .img_body {
@@ -451,7 +457,10 @@ button:hover {
     display: grid;
     grid-template-columns: 90%;
     grid-template-rows: 400px 400px 400px 400px;
-    grid-template-areas: "foto1" "foto2" "foto3" "foto4";
+    grid-template-areas: "foto1"
+ "foto2"
+ "foto3"
+ "foto4";
     justify-items: center;
     border-bottom: 1px solid white;
     text-align: center;
@@ -500,4 +509,22 @@ button:hover {
     text-align: center;
     transition-duration: 4s;
     transform: rotate(360deg);
-    font-family: 'Baloo Da 2', normal; } }
+    font-family: 'Baloo Da 2', normal; } 
+    .msj{
+      font-size: 61px;
+      text-align: center;
+      font-family: 'Bebas Neue', cursive;
+      background-color: black;
+      padding: 1px;}
+     .msj__titulo{
+      @extend .msj;        
+      background-color: white;
+      color: rgb(0, 0, 0);}
+      @mixin estilo_alerta( $color_letra, $tamanio_letra, $color_fondo){
+        font-size: $tamanio_letra;
+        text-align: center;
+        background-color: $color_fondo;
+        color: $color_letra;
+        font-family: 'MuseoModerno', cursive;}
+    .mensaje_index{
+        @include estilo_alerta(white, 28px, black);}}
