@@ -80,7 +80,7 @@ button:hover{
 
     .logo_header{
         height: 40%;
-        width: 10%;
+        width: 40%;
     }
 
     .header_menu li{
@@ -498,7 +498,7 @@ button:hover{
 
 
 
-/*          VIEWPORT MAXIMO 600PX    */
+/*          VIEWPORT HASTA 600PX    */
 
 
 @media only screen and (max-width: 600px){
@@ -783,4 +783,32 @@ button:hover{
         font-family: 'Baloo Da 2', normal;
     }
 
+    .cuerpogaleria{
+        background-color: black;
+        height: 1400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    p{
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        margin: 15px;        
+    }
+
+
+    footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+    }
+
 }
+

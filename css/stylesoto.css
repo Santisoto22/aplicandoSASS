@@ -527,4 +527,24 @@ button:hover {
         color: $color_letra;
         font-family: 'MuseoModerno', cursive;}
     .mensaje_index{
-        @include estilo_alerta(white, 28px, black);}}
+        @include estilo_alerta(white, 28px, black);}
+    .cuerpogaleria{
+          background-color: black;
+          height: 1400px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;}  
+      p{
+          text-align: center;
+          font-size: 20px;
+          font-family: 'Oswald', sans-serif;
+          color: white;
+          margin: 15px;}
+      footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;}}
